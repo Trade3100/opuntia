@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#main-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDDBC0;
+    padding: 0;
+    margin: 0;
+}
+
+#main-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header img {
+    margin-left: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active {
+    color: #000;
+    background-color: #fff;
+}
+
+.nav.home {
+    color: #000;
+    background-color: #fff;
+}
+
+#text {
+    margin-bottom: 150px;
+}
+
+#text h1 {
+    font-weight: 400;
+    font-size: 6em;
+    text-shadow: #ACB992 5px 5px;
+    text-align: center;
+    color: black;
+    margin-left: -20px;
+    animation: float 10s ease-in-out infinite;
+}
+
+#text p {
+    text-align: center;
+    margin-left: 200px;
+    font-size: 2em;
+    font-style: oblique;
+    animation: float 10s ease-in-out infinite;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: black;
+    padding: 8px 30px;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-top: -70px;
+    z-index: 9;
+    display: inline-block;
+    box-shadow: #ACB992 5px 5px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
